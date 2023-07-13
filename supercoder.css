@@ -4,21 +4,15 @@
     box-sizing: border-box;
 }
 @media screen and (max-width: 768px) {
-   header{
-    width: 100%;
-    height: 0rem;
-    display: flex;
-    flex-wrap: wrap;
-   }
-    .logo{
-        width: 20%;
-        border: 3px red solid;
-        z-index: 1;
-        }
-    .background-mobile{
-        width: 100%;
+    body{
+        flex: auto;
+        background: url(background-mobile.pg) no-repeat center/ cover;
+        justify-content: center;
+        overflow: hidden;
         height: 100%;
-        border: 3px blue solid;
-        
     }
+    .logo{
+        display: flex;
+        width: 20%;
+        }
 }
