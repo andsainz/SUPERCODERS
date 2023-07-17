@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media screen and (max-width:760px) {
+    body{
+        height: 100vh;
+        width: 100vw;
+        font-family: 'Open Sans', sans-serif;
+        background-image: url('background-mobile.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    .container-center{      
+        width:100vw;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    .container-header{
+        display: inline-flex;
+        width: 100vw;
+        justify-content: space-between;
+    }
+    .logo{
+        display: flex;
+        width: 40vw;
+        margin-left: 1.5rem;
+    }
+    #edit--bttn{
+        margin-top: 5vh;
+        margin-right: 2em;
+        width: 20vw;
+        height: 6vh;
+        font-size: 1rem;
+        background-color: #003C8D;
+        border-radius: 0.2rem;
+        border-style: none;
+        box-sizing: border-box;
+        color: white;
+        cursor: pointer;
+        display: inline-block;
+        list-style: none;
+        outline: none;
+    }
+    #name--container{
+        display: inline-flex;
+        position: relative;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+    }
+    #start--bttn{
+        display: inline-flex;
+        position: relative;
+        justify-content: center;
+        margin-top: 6rem;
+        background-color: white;
+        border-radius: 0.5rem;
+        border-style: none;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        color: black;
+        outline: none;
+        text-align: center;
+        text-decoration: none;
+        font-size: 3rem;
+        font-weight: 800;
+        line-height: normal;
+        padding: 1rem 2rem;
+    }
+}
+
+@media screen and (min-width:761px){
+    body{
+        height: 100vh;
+        width: 100vw;
+        font-family: 'Open Sans', sans-serif;
+        background-image: url('background-desktop.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    .container-center{      
+        width:100vw;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    .container-header{
+        display: inline-flex;
+        width: 100vw;
+        justify-content: space-between;
+    }
+    .logo{
+        display: flex;
+        width: 20vw;
+        margin-left: 4rem;
+    }
+    #edit--bttn{
+        margin-top: 7vh;
+        margin-right: 4em;
+        width: 12vw;
+        height: 6vh;
+        background-color: #003C8D;
+        border-radius: 0.2rem;
+        border-style: none;
+        box-sizing: border-box;
+        color: white;
+        cursor: pointer;
+        display: inline-block;
+        list-style: none;
+        outline: none;
+    }
+    #name--container{
+        display: inline-flex;
+        position: relative;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+    }
+    #start--bttn{
+        display: inline-flex;
+        position: relative;
+        justify-content: center;
+        margin-top: 6rem;
+        background-color: white;
+        border-radius: 0.5rem;
+        border-style: none;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        color: black;
+        outline: none;
+        text-align: center;
+        text-decoration: none;
+        font-size: 3rem;
+        font-weight: 800;
+        line-height: normal;
+        padding: 1rem 2rem;
+    }
+}
