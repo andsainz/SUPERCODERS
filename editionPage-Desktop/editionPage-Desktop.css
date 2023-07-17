@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos comunes para ambas vistas (desktop y móvil) */
+.logo {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 100px;
+}
+
+#edit--btn{
+    position: absolute;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 1rem;
+}
+
+/* DESKTOP */
+@media (min-width: 669px) {
+    .background-mobile {
+        display: none; 
+    }
+
+    .background-desktop {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+    }
+
+    .logo {
+        top: 1rem;
+        left: 3rem;
+        width: 9rem;
+    }
+
+    #edit--btn {
+        top: 1.8rem;
+        right: 2rem;
+        background-color: #003C8D;
+        color: white;
+        position: absolute;
+    }
+}
+
+.superhero{
+    width: 10rem;
+    height: 22rem; 
+    position: absolute;
+    top: 41%;
+    left: 87%;
+}
