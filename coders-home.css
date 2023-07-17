@@ -29,7 +29,7 @@
         width: 40vw;
         margin-left: 1.5rem;
     }
-    #edit--bttn{
+    #edit--btn{
         margin-top: 5vh;
         margin-right: 2em;
         width: 20vw;
@@ -45,17 +45,8 @@
         list-style: none;
         outline: none;
     }
-    #name--container{
-        display: inline-flex;
-        position: relative;
-        justify-content: center;
-        width: 100vw;
-        height: 100vh;
-    }
-    #start--bttn{
-        display: inline-flex;
-        position: relative;
-        justify-content: center;
+    #start--btn{
+        transform: translate(20%, 50%);
         margin-top: 6rem;
         background-color: white;
         border-radius: 0.5rem;
@@ -98,7 +89,7 @@
         width: 20vw;
         margin-left: 4rem;
     }
-    #edit--bttn{
+    #edit--btn{
         margin-top: 7vh;
         margin-right: 4em;
         width: 12vw;
@@ -113,18 +104,14 @@
         list-style: none;
         outline: none;
     }
-    #name--container{
-        display: inline-flex;
-        position: relative;
-        justify-content: center;
+    .name--container{
+        display: flex;
         width: 100vw;
         height: 100vh;
     }
-    #start--bttn{
-        display: inline-flex;
-        position: relative;
-        justify-content: center;
+    #start--btn{
         margin-top: 6rem;
+        transform: translate(-50%, -50%);
         background-color: white;
         border-radius: 0.5rem;
         border-style: none;
