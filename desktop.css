@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.logo {
+    position: absolute;
+    top: 0.5rem;
+    left: 6rem;
+    width: 8rem;
+}
+
+#edit--btn {
+    position: absolute;
+    top: 1.8rem;
+    right: 8rem;
+    background-color: #003C8D;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 1rem;
+}
+
+.background-desktop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.heroe3{
+    position: absolute;
+    top: 15rem;
+    left: 15rem;
+    width: 100px;
+    height: 150px;
+}
+
+.heroe4{
+    position: absolute;
+    bottom: 0rem;
+    width: 100px;
+    height: 220px;
+    right: 9rem;
+}
+
+#tryagain--btn {
+    position: absolute;
+    bottom: 15rem;
+    left: 38.5rem;
+    background-color: #ffffff;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 1rem;
+    height: 80px;
+    width: 150px;
+    border: #ffffff;
+}
+
+#reset--btn {
+    position: absolute;
+    bottom: 15rem;
+    right: 38.5rem;
+    background-color: #ffffff;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 1rem;
+    height: 80px;
+    width: 150px;
+    border: white;
+}
+
+.container{
+    position: absolute;
+    top: 15rem;
+    right: 50.5rem;
+    background-color: #ffffff;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 1rem;
+    height: 80px;
+    width: 150px;
+    border: white;
+}
+
+#selectedCoder{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #003C8D;
+    left: 10rem;
+    color: #ffffff;
+}
