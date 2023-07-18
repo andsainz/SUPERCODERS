@@ -8,7 +8,7 @@
         height: 100vh;
         width: 100vw;
         font-family: 'Open Sans', sans-serif;
-        background-image: url('background-mobile.png');
+        background-image: url('images/background-mobile.png');
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
@@ -46,17 +46,17 @@
         outline: none;
     }
     .program--container{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 50vh;
+        display: absolute;
         position: absolute;
+        height: 50vh;
+
     }
     .random--name{
         background-color: #003C8D;
         padding: 2rem 2rem;
         margin:8rem 1.5rem 2rem;
         border-radius: 0.4rem;
+        transform: translate(40%, 50%);
     }
     #random--name{
         border-radius: 0.4rem;
@@ -73,6 +73,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        
     }
     #tryAgain--btn, #reset--btn {
         width: 8rem;
@@ -95,7 +96,7 @@
         height: 100vh;
         width: 100vw;
         font-family: 'Open Sans', sans-serif;
-        background-image: url('background-desktop.png');
+        background-image: url('images/background-desktop.png');
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
@@ -113,39 +114,42 @@
     }
     .logo{
         display: flex;
-        width: 15vw;
-        margin-left: 7rem;
+        width: 20vw;
+        margin-left: 4rem;
+        z-index: 2;
     }
     #edit--btn{
-        margin-top: 7vh;
-        margin-right: 7em;
-        width: 7vw;
+        margin-top: 3rem;
+        margin-right: 4rem;
+        width: 12vw;
         height: 6vh;
         background-color: #003C8D;
-        border-radius: 0.5rem;
+        border-radius: 0.2rem;
         border-style: none;
         box-sizing: border-box;
         color: white;
-        cursor: pointer;
-        display: inline-block;
-        list-style: none;
+        font-family: 'Open Sans';
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 800;
         outline: none;
+        z-index: 2;
     }
     .program--container{
+        position: relative;
         display: flex;
         justify-content: center;
-        margin: 0;
+        z-index: 1;
     }
     .random--name{
         position: relative;
-        left: 25rem;
-        top: 5rem;
+        top: 2rem;
         background-color: #003C8D;
         padding: 2rem 2rem;
-        margin:6rem 0rem 1rem;
+        margin: 1rem 0rem;
         border-radius: 0.4rem;
-        width: 40%;
-
+        width: 24rem;
+        transform: translate(80%, 0%);
     }
     #random--name{
         position: relative;
@@ -158,18 +162,19 @@
         line-height: normal;
         padding: 0.8rem 0.8rem;
         background-color: #EEEEEE;
+        width: auto;
     }
     .container--btn{
         display: inline-flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
+        width: 24rem;
         gap: 2rem;
-        width: 40%;
+        transform: translate(80%, 0%);
     }
     #tryAgain--btn, #reset--btn {
         position: relative;
-        left: 25rem;
-        top: 8rem;
+        top: 2rem;
         width: 9rem;
         height: 3rem;
         flex-shrink: 0;
@@ -181,5 +186,6 @@
         font-size: 1rem;
         font-style: normal;
         font-weight: 800;
-}
+    }
+    
 }
