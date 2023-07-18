@@ -16,14 +16,18 @@
             <button id="edit--btn" onclick="location.href='coders-editpage.html'">EDIT</button>
         </div>
         <div class="name--container">
-            <p id="insert--name" class="center">Name Coder</p>
-            <button id="add--btn" href="coders-editpage.html">ADD</button>
+            <input type="text" id="newName" placeholder="Add a New SuperCoder">
+            <button id="add--btn" onclick="anotherCoder()">ADD</button>
         </div>
-        <div class="coderlist-container">
-            <p id="list--name" class="center">Name Coder</p>
+        
+        
+            <ul id="namesList">
+
+            </ul>
+            <!-- COMETARIO
             <img id="editName--btn" src="images/editbutton.png" alt="Edit button for list">
-            <img id="deleteName--btn" src="images/deletebutton.png" alt="Delete button for list">
-        </div>
+            <img id="deleteName--btn" src="images/deletebutton.png" alt="Delete button for list">-->
+        
         <button id="deleteAll--btn">DELETE ALL</button>
     </div>
 

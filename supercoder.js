@@ -14,6 +14,24 @@ buttonReset.addEventListener("click", function(){
     
 })
 
+function showNames(){
+    let list = document.querySelector("#namesList");
+    list.innerHTML = "";
+    for (let i = 0; i < superCoders.length; i++){
+        let coder = superCoders[i];
+        let li = document.createElement("li");
+        li.textContent = coder;
+        list.appendChild(li);
+    }
+}
+showNames();
+
+function anotherCoder(){
+    let newName = document.querySelector("#newName").value 
+    superCoders.push(newName);
+    document.querySelector("#newName").value = "";
+    showNames()
+};
 
 
 
