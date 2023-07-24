@@ -54,6 +54,7 @@
         padding: 1.5rem;
         width: 20rem;
         height: 7rem;
+
     }
     #insert--name {
         width: 12rem;
@@ -171,6 +172,7 @@
         padding: 1.5rem;
         width: 20rem;
         height: 7rem;
+        
     }
     #insert--name {
         width: 12rem;
@@ -235,4 +237,9 @@
         width: 2.3125rem;
         height: 2.25rem;
     }
+}
+
+ul{
+    border: 3px solid black;
+    
 }
