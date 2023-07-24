@@ -98,7 +98,7 @@
         position: relative;
         display: flex;
         justify-content: end;
-        margin-right: 2rem;
+        margin-right: 3rem;
         margin-top: 5rem;
         z-index: 3;
     }
@@ -110,7 +110,7 @@
     #bubble-ready{
         position: absolute;
         width: 9rem;
-        margin-right: 9rem;
+        margin-right: 8rem;
         margin-bottom: 10rem;
     }
 }
