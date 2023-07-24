@@ -1,27 +1,25 @@
 const superCoders = [ "Cyntia", "Diego A", "Fernando", "Geovanny", "Gisela", "Jaime", "Jassed", "Jes", "Jimmy", "Jorge", "Pedro", "Raúl", "Rubén", "Sophia", "Thuanny", "Virginia", "Adriana", "Luis", "Ainhoa", "Andrea", "Diego B", "Emily", "Víctor", "Wanda", "Bryan"];
-let changeName = document.querySelector("#tryAgain--btn");
-changeName.addEventListener("click", function(){
-    let numEntero = Math.floor(Math.random() * superCoders.length)
-    let coderName = superCoders[numEntero]
-    superCoders.splice(numEntero,1)
-    document.querySelector("#random--name").textContent = coderName;
-});
 
-let buttonReset = document.querySelector("#reset--btn");
-let selectedCoder = document.querySelector("#random--name");
-buttonReset.addEventListener("click", function(){
-    selectedCoder.innerText = "";
-    
-})
+function changeName() {
+    let index = Math.floor(Math.random() * superCoders.length)
+    let coderName = superCoders[index]
+    superCoders.splice(index, 1) //no vuelve a aparecer el coder seleccionado
 
+    document.getElementById("random--name").textContent = coderName;
+    if(superCoders.length<=0){
+        alert("último coder") //alerta último coder
+    } else{alert(`${coderName}, te tocó`)}//aviso del nombre del coder seleccionado
+}
+
+//agregar nombres
 function anotherCoder(){
     let newName = document.querySelector("#newName").value 
     superCoders.push(newName);
     document.querySelector("#newName").value = "";
-    showNames()
+    showNames();
 };
 
-
+//mostrar lista
 function showNames(){
     let list = document.querySelector("#namesList");
     list.innerHTML = "";
@@ -29,7 +27,6 @@ function showNames(){
     let li = document.createElement("li");
     li.innerHTML = `<span>${superCoders[i]}</span><img src="images/draw.png" onclick="editName(${i})"> <img src="images/close.png" onclick="removeName(${i})">`;
     list.appendChild(li);
-    
     }
 };
 
