@@ -48,15 +48,14 @@
     .program--container{
         display: absolute;
         position: absolute;
-        height: 50vh;
-
+        height: 10vh;
     }
     .random--name{
         background-color: #003C8D;
         padding: 2rem 2rem;
         margin:8rem 1.5rem 2rem;
         border-radius: 0.4rem;
-        transform: translate(40%, 50%);
+        transform: translate(50%, 50%);
     }
     #random--name{
         border-radius: 0.4rem;
@@ -88,6 +87,44 @@
         font-style: normal;
         font-weight: 800;
 }
+
+    .hero3-container{
+        position: relative;
+        margin-top: -1rem;
+        z-index: 3;
+    }
+    #hero-yourturn{
+        position: absolute;
+        width: 7rem;
+        transform: rotate(-15deg);
+        flex-shrink: 0;
+        margin-left: 8rem;
+    }
+    #bubble-yourturn{
+        position: absolute;
+        width: 7rem;
+        margin-left: 2rem;
+        margin-top: 3rem;
+    }
+    .hero4-container{
+        position: relative;
+        display: flex;
+        justify-content: end;
+        margin-right: 2rem;
+        margin-top: 5rem;
+        z-index: 3;
+    }
+    #hero-githis{
+        position: absolute;
+        width: 7rem;
+        flex-shrink: 0;
+    }
+    #bubble-gotthis{
+        position: absolute;
+        width: 9rem;
+        margin-right: 9rem;
+        margin-bottom: 10rem;
+    }
 }
 
 
@@ -115,12 +152,12 @@
     .logo{
         display: flex;
         width: 20vw;
-        margin-left: 4rem;
+        margin-left: 6rem;
         z-index: 2;
     }
     #edit--btn{
         margin-top: 3rem;
-        margin-right: 4rem;
+        margin-right: 5.3rem;
         width: 12vw;
         height: 6vh;
         background-color: #003C8D;
@@ -146,17 +183,17 @@
         top: 2rem;
         background-color: #003C8D;
         padding: 2rem 2rem;
-        margin: 1rem 0rem;
+        margin: 3rem 0rem 1rem;
         border-radius: 0.4rem;
-        width: 24rem;
-        transform: translate(80%, 0%);
+        width: 30rem;
+        transform: translate(100%, 0%);
     }
     #random--name{
         position: relative;
         border-radius: 0.4rem;
         text-align: center;
         color: #000;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -168,24 +205,61 @@
         display: inline-flex;
         justify-content: space-between;
         align-items: center;
-        width: 24rem;
+        width: 30rem;
         gap: 2rem;
-        transform: translate(80%, 0%);
+        transform: translate(100%, 0%);
     }
     #tryAgain--btn, #reset--btn {
         position: relative;
         top: 2rem;
-        width: 9rem;
-        height: 3rem;
+        width: 12rem;
+        height: 4rem;
         flex-shrink: 0;
         border-radius: 0.5rem;
         background: #FFF;
         border-style: none;
         box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
         font-family: Open Sans;
-        font-size: 1rem;
+        font-size: 1.2rem;
         font-style: normal;
         font-weight: 800;
     }
-    
+    .hero3-container{
+        position: relative;
+        z-index: 3;
+    }
+    #hero-yourturn{
+        position: absolute;
+        width: 12rem;
+        transform: rotate(-15deg);
+        flex-shrink: 0;
+        margin-left: 19rem;
+        margin-top: 8rem;
+        z-index: 4;
+    }
+    #bubble-yourturn{
+        position: absolute;
+        width: 14rem;
+        margin-left: 9rem;
+        margin-top: 2rem;
+    }
+    .hero4-container{
+        position: relative;
+        display: flex;
+        justify-content: end;
+        margin-right: 7rem;
+        z-index: 3;
+    }
+    #hero-gotthis{
+        position: absolute;
+        width: 10rem;
+        flex-shrink: 0;
+        margin-top: 2rem;
+    }
+    #bubble-gotthis{
+        position: absolute;
+        width: 10rem;
+        margin-right: 9rem;
+        margin-bottom: 12rem;
+    }
 }

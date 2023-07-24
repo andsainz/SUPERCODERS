@@ -144,12 +144,12 @@
     .logo{
         display: flex;
         width: 20vw;
-        margin-left: 4rem;
+        margin-left: 6rem;
         z-index: 2;
     }
     #edit--btn{
         margin-top: 3rem;
-        margin-right: 4rem;
+        margin-right: 5.3rem;
         width: 12vw;
         height: 6vh;
         background-color: #003C8D;
@@ -172,7 +172,7 @@
         z-index: 1;
     }
     #start--btn{
-        margin-top: 8rem;
+        margin-top: 16rem;
         background-color: white;
         border-radius: 0.5rem;
         border-style: none;
@@ -191,39 +191,40 @@
     }
     .hero1-container{
         position: relative;
-        margin-top: -1rem;
+        margin-top: -3.5rem;
+        margin-left: 4rem;
         z-index: 3;
     }
     #hero-welcome{
         position: absolute;
-        width: 10rem;
+        width: 14rem;
         transform: rotate(-15deg);
         flex-shrink: 0;
         margin-left: 14rem;
     }
     #bubble-welcome{
         position: absolute;
-        width: 8rem;
-        margin-left: 6rem;
-        margin-top: 3rem;
+        width: 10rem;
+        margin-left: 6.5rem;
+        margin-top: 6.5rem;
     }
     .hero2-container{
         position: relative;
         display: flex;
         justify-content: end;
-        margin-right: 4rem;
+        margin-right: 10rem;
         z-index: 3;
-        margin-top: -2rem;
+        margin-top: -2.5rem;
     }
     #hero-ready{
         position: absolute;
-        width: 8rem;
+        width: 10rem;
         flex-shrink: 0;
     }
     #bubble-ready{
         position: absolute;
-        width: 10rem;
-        margin-right: 9rem;
+        width: 12rem;
+        margin-right: 10rem;
         margin-bottom: 10rem;
     }
 }
