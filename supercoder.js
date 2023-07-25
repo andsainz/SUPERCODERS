@@ -50,6 +50,14 @@ function reset(){
 showNames()
 
 
+function deleteAll() {
+    superCoders.length = 0; 
+    showNames(); 
+}
+
+
+document.getElementById("deleteAll--btn").addEventListener("click", deleteAll);
+
 
 
 
