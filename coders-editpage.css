@@ -240,13 +240,13 @@
         transform: translate(100%, 0%);
         margin-top: 1rem;
     }
-    #insert--name {
+    #newName {
         display: inline-block;
         color: #000;
         background: #EEE;
         border-radius: 0.9rem;
         font-family: 'Open Sans';
-        font-size: 1.5rem;
+        font-size: 1rem;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -290,16 +290,15 @@
         margin-top: 2rem;
         gap: 2rem;
     }
-    #list--name, li{
+    #nameList, li{
         display: inline-flex;
         color: #000;
         background: #EEE;
         border-radius: 0.9rem;
         font-family: 'Open Sans';
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-style: normal;
         font-weight: 700;
-        line-height: normal;
         border-style: none;
         box-sizing: border-box;
         list-style: none;
@@ -307,6 +306,9 @@
         width: 18rem;
         height: 4rem;
         padding: 1rem;
+        }
+    ul{
+        overflow:scroll;
         }
     #editName--btn, #deleteName--btn{
         border-radius: 0.9rem;
