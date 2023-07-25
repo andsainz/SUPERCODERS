@@ -29,7 +29,7 @@ function showNames(){
     list.innerHTML = "";
     for (let i = 0; i < superCoders.length; i++){
     let li = document.createElement("li");
-    li.innerHTML = `<span>${superCoders[i]}</span><img src="images/draw.png" onclick="editName(${i})"> <img src="images/close.png" onclick="removeName(${i})">`;
+    li.innerHTML = `<span>${superCoders[i]}</span><img id="editName--btn" src="images/draw.png" onclick="editName(${i})"> <img id="deleteName--btn" src="images/close.png" onclick="removeName(${i})">`;
     list.appendChild(li);
     }
 };

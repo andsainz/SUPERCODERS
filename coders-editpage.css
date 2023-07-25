@@ -279,8 +279,7 @@
         height: 4rem;
         padding: 0.5rem;
     }
-    .coderlist-container{
-        display: flex;
+    #namesList{
         justify-content: center;
         border-radius: 1rem;
         background: #FFF;
@@ -290,9 +289,9 @@
         height: 7rem;
         transform: translate(100%, 0%);
         margin-top: 2rem;
-        gap: 1rem;
+        gap: 2rem;
     }
-    #list--name{
+    #list--name, li{
         display: inline-flex;
         color: #000;
         background: #EEE;
