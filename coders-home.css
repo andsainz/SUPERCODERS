@@ -189,6 +189,7 @@
         left: 40%;
         z-index: 2;
         animation: wiggle 2s linear infinite;
+        animation-delay: 3s;
     }
     .hero1-container{
         position: relative;
