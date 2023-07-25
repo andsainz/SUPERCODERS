@@ -64,7 +64,7 @@
         width: 20rem;
         transform: translate(6%, 0%);
     }
-    #insert--name {
+    #newName {
         display: inline-block;
         color: #000;
         background: #EEE;
@@ -99,7 +99,7 @@
         outline: none;
         padding: 0.5rem;
     }
-    .coderlist-container{
+    #namesList{
         display: flex;
         justify-content: center;
         border-radius: 1rem;
@@ -111,8 +111,12 @@
         width: 20rem;
         transform: translate(6%, 0%);
     }
-    #list--name{
-        display: inline-flex;
+    ul{
+        overflow:scroll;
+        }
+    li{
+        display: flex;
+        justify-content: space-evenly;
         color: #000;
         background: #EEE;
         border-radius: 0.9rem;
@@ -126,12 +130,12 @@
         list-style: none;
         outline: none;
         padding: 0.5rem 1rem;
-        width: 14rem;
+        width: 20rem;
         }
     #editName--btn, #deleteName--btn{
         border-radius: 0.9rem;
         background: #EEE;
-        width: 2.5 rem;
+        width: 2.5rem;
         height: 2.5rem;
         padding: 0.5rem;
     }
@@ -290,7 +294,7 @@
         margin-top: 2rem;
         gap: 2rem;
     }
-    #nameList, li{
+    li{
         display: inline-flex;
         color: #000;
         background: #EEE;
@@ -303,7 +307,7 @@
         box-sizing: border-box;
         list-style: none;
         outline: none;
-        width: 18rem;
+        width: 20rem;
         height: 4rem;
         padding: 1rem;
         }
@@ -331,7 +335,6 @@
         box-sizing: border-box;
         color: white;
         cursor: pointer;
-        list-style: none;
         outline: none;
         width: 30rem;
         height: 5rem;
