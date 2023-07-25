@@ -35,6 +35,18 @@ function editName(index){
     superCoders[index] =  namePrompt    
     showNames();
 }
+
+function removeName(index) {
+    if (confirm(`¿Quieres eliminar este ${superCoders[index]}?`)){
+        superCoders.splice(index,1)
+        showNames()
+    }
+}
+
+function reset(){
+    location.reload()
+}
+
 showNames()
 
 
