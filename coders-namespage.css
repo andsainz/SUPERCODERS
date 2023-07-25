@@ -108,7 +108,7 @@
         transform: rotate(5deg);
         flex-shrink: 0;
         margin-top: 5.5rem;
-
+        animation: movimiento 2.5s linear infinite;
     }
     #bubble-yourturn{
         position: absolute;
@@ -244,6 +244,7 @@
         margin-left: 19rem;
         margin-top: 8rem;
         z-index: 4;
+        animation: movimiento 2.5s linear infinite;
     }
     #bubble-yourturn{
         position: absolute;
@@ -271,3 +272,15 @@
         margin-bottom: 12rem;
     }
 }
+
+@keyframes movimiento{
+    0%{
+      transform: translateY(0);
+    }
+    50%{
+      transform:  translateY(30px);
+    }
+    100%{
+      transform: translateY(0);
+    }
+  }
