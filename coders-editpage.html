@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Supercoder</title>
+    <link href="coders-editpage.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container-center">
+        <div class="container-header">
+            <img class="logo" src="images/logoSuperCoders-01.png" alt="logo" onclick="location.href='coders-home.html'">
+            <button id="edit--btn" onclick="location.href='coders-editpage.html'">EDIT</button>
+        </div>
+        <div class="name--container">
+            <input type="text" id="newName" placeholder="Add a New SuperCoder">
+            <button id="add--btn" onclick="anotherCoder()">ADD</button>
+        </div>
+        <ul id="namesList"></ul> 
+            <!-- COMETARIO
+            <img id="editName--btn" src="images/editbutton.png" alt="Edit button for list">
+            <img id="deleteName--btn" src="images/deletebutton.png" alt="Delete button for list">-->
+        <button id="deleteAll--btn">DELETE ALL</button>
+        <footer class="hero5-container">
+            <img id="hero-manage" src="images/heroe5.png" alt="Heroe for Manage Your List">
+            <img id="bubble-manage" src="images/edit-dsk-bubble-manage.png" alt="Bubble for Manage Your List">
+        </footer>
+    </div>
+
+<script src="supercoder.js"></script>
+</body>
+</html>

@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;}
+@media screen and (max-width:760px) {
+    body{
+        height: 100vh;
+        width: 100vw;
+        background-color: #78C7E6;
+        font-family: 'Open Sans', sans-serif;
+        background-image: url('images/background-mobile.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        z-index: 1;
+
+    }
+    .container-center{      
+        width:100vw;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        z-index: 1;
+    }
+    .container-header{
+        display: inline-flex;
+        width: 100vw;
+        justify-content: space-between;
+        z-index: 1;
+    }
+    .logo{
+        display: flex;
+        width: 40vw;
+        margin-left: 1.5rem;
+        z-index: 2;
+    }
+    #edit--btn{
+        margin-top: 4.5vh;
+        margin-right: 2rem;
+        width: 20vw;
+        height: 6vh;
+        background-color: #003C8D;
+        border-radius: 0.2rem;
+        border-style: none;
+        box-sizing: border-box;
+        color: white;
+        cursor: pointer;       
+        list-style: none;
+        outline: none;
+        font-family: 'Open Sans';
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 800;
+        z-index: 2;
+    }
+    .name--container{
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        z-index: 1;
+    }
+    #start--btn{
+        transform: translate(30%, 50%);
+        margin-top: 8rem;
+        background-color: white;
+        border-radius: 0.5rem;
+        border-style: none;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        color: black;
+        outline: none;
+        text-align: center;
+        text-decoration: none;
+        font-size: 3rem;
+        font-weight: 800;
+        line-height: normal;
+        padding: 1rem 2rem;
+        z-index: 2;
+    }
+    .hero1-container{
+        position: relative;
+        margin-top: -1rem;
+        animation: slideInLeft 1s 1 linear;
+    }
+    #hero-welcome{
+        position: absolute;
+        width: 7rem;
+        transform: rotate(-15deg);
+        flex-shrink: 0;
+        margin-left: 8rem;
+        animation: movimiento 1s 1 linear ;
+        z-index: 3;
+    }
+    #bubble-welcome{
+        position: absolute;
+        width: 7rem;
+        margin-left: 2rem;
+        margin-top: 3rem;
+        animation: popOut 3s 1;
+        z-index: 4;
+    }
+    .hero2-container{
+        position: relative;
+        display: flex;
+        justify-content: end;
+        margin-right: 3rem;
+        margin-top: 5rem;
+        animation: slideInRight 1s 1 linear;
+        z-index: 3;
+    }
+    #hero-ready{
+        position: absolute;
+        width: 7rem;
+        flex-shrink: 0;
+    }
+    #bubble-ready{
+        position: absolute;
+        width: 9rem;
+        margin-right: 8rem;
+        margin-bottom: 10rem;
+        animation: popOut 4s 1;
+    }
+}
+
+@media screen and (min-width:761px){
+    body{
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        font-family: 'Open Sans', sans-serif;
+        background-image: url('images/background-desktop.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 1;
+    }
+    .container-center{      
+        height: 100vh;
+        width: 100vw;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        z-index: 1;
+    }
+    .container-header{
+        display: inline-flex;
+        width: 100vw;
+        justify-content: space-between;
+        z-index: 1;
+    }
+    .logo{
+        display: flex;
+        width: 20vw;
+        margin-left: 6rem;
+        z-index: 2;
+    }
+    #edit--btn{
+        margin-top: 3rem;
+        margin-right: 5.3rem;
+        width: 12vw;
+        height: 6vh;
+        background-color: #003C8D;
+        border-radius: 0.2rem;
+        border-style: none;
+        box-sizing: border-box;
+        color: white;
+        font-family: 'Open Sans';
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 800;
+        outline: none;
+        z-index: 2;
+    }
+    .name--container{
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        z-index: 1;
+    }
+    #start--btn{
+        margin-top: 16rem;
+        background-color: white;
+        border-radius: 0.5rem;
+        border-style: none;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        color: black;
+        outline: none;
+        text-align: center;
+        text-decoration: none;
+        font-size: 3rem;
+        font-weight: 800;
+        line-height: normal;
+        padding: 1rem 2rem;
+        position: relative;
+        left: 40%;
+        z-index: 2;
+        animation: wiggle 4s linear infinite;
+        animation-delay: 3s;
+    }
+    .hero1-container{
+        position: relative;
+        margin-top: -3.5rem;
+        margin-left: 4rem;
+        animation: slideInLeft 1s 1 linear;
+    }
+    #hero-welcome{
+        position: absolute;
+        width: 16rem;
+        transform: rotate(-15deg);
+        flex-shrink: 0;
+        margin-left: 13rem;
+        animation: movimiento 1s 1 linear infinite;
+        z-index: 3;
+    }
+    #bubble-welcome{
+        position: absolute;
+        width: 12rem;
+        margin-left: 6rem;
+        margin-top: 6.5rem;
+        animation: popOut 3s 1;
+        z-index: 4;
+    }
+    .hero2-container{
+        position: relative;
+        display: flex;
+        justify-content: end;
+        margin-right: 10rem;
+        margin-top: 1.5rem;
+        animation: slideInRight 1s 1 linear;
+        z-index: 3;
+    
+    }
+    #hero-ready{
+        position: absolute;
+        width: 10rem;
+        flex-shrink: 0;
+    }
+    #bubble-ready{
+        position: absolute;
+        width: 12rem;
+        margin-right: 10rem;
+        margin-bottom: 10rem;
+        animation: popOut 4s 1;
+    }
+}
+
+@keyframes slideInLeft {
+	0% {
+		transform: translate(-20%, 0);
+	}
+	100% {
+		transform: translate(0, 0);
+	}
+}
+
+@keyframes slideInRight {
+	0% {
+		transform: translate(20%, 0);
+	}
+	100% {
+		transform: translate(0, 0);
+	}
+}
+
+@keyframes popOut {
+    0% {
+    transform: scale(0, 0);
+    }
+    50% {
+    transform: scale(0, 0);
+    }
+    75% {
+    transform: scale(1.2, 1.2);
+    }
+    100% {
+    transform: scale(1, 1);
+    }
+}
+
+@keyframes wiggle {
+0%, 7% {
+    transform: rotateZ(0);
+}
+15% {
+    transform: rotateZ(-15deg);
+}
+20% {
+    transform: rotateZ(10deg);
+}
+25% {
+    transform: rotateZ(-10deg);
+}
+30% {
+    transform: rotateZ(6deg);
+}
+35% {
+    transform: rotateZ(-4deg);
+}
+40%, 100% {
+    transform: rotateZ(0);
+}
+}
+
+@keyframes movimiento{
+    0%{
+    transform: translateY(-15deg);
+}
+50%{
+    transform:  translateY(30px);
+}
+100%{
+    transform: translateY(-15deg);
+}
+}
