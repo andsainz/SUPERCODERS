@@ -13,8 +13,8 @@ function changeName() {
 
     document.getElementById("random--name").textContent = coderName;
     swal.fire({
-        title: `${coderName}, es tu turno!`,
-        text: 'Tú puedes!!!',
+        title: `${coderName}, It's your turn!`,
+        text: 'You can!!!',
         width: 600,
         padding: '3em',
         color: '#78C7E6',
@@ -54,10 +54,31 @@ function editName(index){
 }
 
 function removeName(index) {
-    if (confirm(`¿Quieres eliminar este ${superCoders[index]}?`)){
-        superCoders.splice(index,1)
-        showNames()
-    }
+    Swal.fire({
+        title: 'Are you sure?',
+        text: "You won't be able to revert this!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, delete it!',
+        backdrop:`
+        rgba(0,0,123,0.4)
+        url("images/spiderman-deadpool.gif")
+        left-start
+        no-repeat
+    `
+    }).then((result) => {
+        if (result.isConfirmed) {
+            superCoders.splice(index,1)
+            showNames()
+        Swal.fire({
+            title: 'Deleted!',
+            text: 'Your file has been deleted.',
+            icon: 'success',
+        })
+        }
+    })
 }
 
 function reset(){
