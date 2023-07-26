@@ -12,7 +12,20 @@ function changeName() {
     superCoders.splice(index, 1); // No volverá a aparecer el coder seleccionado
 
     document.getElementById("random--name").textContent = coderName;
-    alert(`${coderName}, te tocó`); // Aviso del nombre del coder seleccionado
+    swal.fire({
+        title: `${coderName}, es tu turno!`,
+        text: 'Tú puedes!!!',
+        width: 600,
+        padding: '3em',
+        color: '#78C7E6',
+        background: '#fff url(/images/trees.png)',
+        backdrop: `
+            rgba(120, 199, 230, 0.4)
+            url("images/i-can-yo-puedo.gif")
+            top
+            no-repeat
+        `
+    }); // Aviso del nombre del coder seleccionado
 }
 
 //agregar nombres
