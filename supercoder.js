@@ -54,10 +54,31 @@ function editName(index){
 }
 
 function removeName(index) {
-    if (confirm(`¿Quieres eliminar este ${superCoders[index]}?`)){
-        superCoders.splice(index,1)
-        showNames()
-    }
+    Swal.fire({
+        title: 'Are you sure?',
+        text: "You won't be able to revert this!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, delete it!',
+        backdrop:`
+        rgba(0,0,123,0.4)
+        url("images/spiderman-deadpool.gif")
+        left-start
+        no-repeat
+    `
+    }).then((result) => {
+        if (result.isConfirmed) {
+            superCoders.splice(index,1)
+            showNames()
+        Swal.fire({
+            title: 'Deleted!',
+            text: 'Your file has been deleted.',
+            icon: 'success',
+        })
+        }
+    })
 }
 
 function reset(){
