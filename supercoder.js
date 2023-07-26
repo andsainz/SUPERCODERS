@@ -89,4 +89,18 @@ let fadeInFirstHero = setInterval(() => {
     opacity += 0.01;
 }, 5);
 
-
+function alertMsj(){
+    Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'Your work has been saved',
+        showConfirmButton: false,
+        timer: 2000,
+        backdrop: `
+            rgba(120, 199, 230, 0.4)
+            url("images/spiderman-deadpool.gif")
+            left-start
+            no-repeat
+        `
+    })
+}
