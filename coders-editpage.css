@@ -356,11 +356,37 @@
         width: 13rem;
         flex-shrink: 0;
         margin-right: 8rem;
+        animation: slideInRight 1s 1 linear;
     }
     #bubble-manage{
         position: absolute;
         width: 12rem;
         margin-right: 4rem;
         margin-top: -7rem;
+        animation: popOut 3s 1;
+    }
+}
+
+@keyframes slideInRight {
+	0% {
+		transform: translate(20%, 0);
+	}
+	100% {
+		transform: translate(0, 0);
+	}
+}
+
+@keyframes popOut {
+    0% {
+    transform: scale(0, 0);
+    }
+    50% {
+    transform: scale(0, 0);
+    }
+    75% {
+    transform: scale(1.2, 1.2);
+    }
+    100% {
+    transform: scale(1, 1);
     }
 }
