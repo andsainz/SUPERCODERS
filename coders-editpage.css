@@ -295,6 +295,7 @@
     }
     li{
         display: flex;
+        justify-content: space-between;
         align-items: center;
         color: #000;
         background: #FFF;
@@ -309,8 +310,8 @@
         outline: none;
         width: 30rem;
         height: 7rem;
-        padding: 1rem 2rem;
-        gap: 3rem
+        padding: 1rem 3rem;
+        margin-bottom: 1rem;
         }
     ul{
         overflow:scroll;
@@ -321,6 +322,9 @@
         width: 4rem;
         height: 4rem;
         padding: 1rem;
+    }
+    #deleteName--btn{
+        margin-left: -6rem;
     }
     #deleteAll--btn{
         border-radius: 0.9rem;
