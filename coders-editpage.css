@@ -100,15 +100,11 @@
         padding: 0.5rem;
     }
     #namesList{
-        display: flex;
-        justify-content: center;
         border-radius: 1rem;
-        background: #FFF;
         box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.10);
-        padding: 1rem;
         margin-top: 2rem;
-        gap: 1rem;
         width: 20rem;
+        height: 5.5rem;
         transform: translate(6%, 0%);
     }
     ul{
@@ -116,28 +112,34 @@
         }
     li{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        align-items: center;
         color: #000;
-        background: #EEE;
+        background: #fff;
         border-radius: 0.9rem;
         font-family: 'Open Sans';
-        font-size: 1rem;
+        font-size: 1.2rem;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
         border-style: none;
         box-sizing: border-box;
         list-style: none;
-        outline: none;
-        padding: 0.5rem 1rem;
         width: 20rem;
+        height: 5.5rem;
+        padding: 0.8rem 2rem 0.8rem 2rem;
+        margin-bottom: 1rem;
+        gap: 3rem;
         }
     #editName--btn, #deleteName--btn{
         border-radius: 0.9rem;
-        background: #EEE;
-        width: 2.5rem;
-        height: 2.5rem;
+        background: #eee;
+        width: 3rem;
+        height: 3rem;
         padding: 0.5rem;
+    }
+    #deleteName--btn{
+        margin-left: -2.7rem;
     }
     #deleteAll--btn{
         border-radius: 0.9rem;
@@ -285,19 +287,17 @@
     #namesList{
         justify-content: center;
         border-radius: 1rem;
-        background: #FFF;
         box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.10);
-        padding: 1.5rem;
         width: 30rem;
         height: 7rem;
         transform: translate(100%, 0%);
         margin-top: 2rem;
-        gap: 2rem;
     }
     li{
-        display: inline-flex;
+        display: flex;
+        align-items: center;
         color: #000;
-        background: #EEE;
+        background: #FFF;
         border-radius: 0.9rem;
         font-family: 'Open Sans';
         font-size: 1.2rem;
@@ -307,9 +307,10 @@
         box-sizing: border-box;
         list-style: none;
         outline: none;
-        width: 20rem;
-        height: 4rem;
-        padding: 1rem;
+        width: 30rem;
+        height: 7rem;
+        padding: 1rem 2rem;
+        gap: 3rem
         }
     ul{
         overflow:scroll;
