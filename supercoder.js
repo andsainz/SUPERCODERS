@@ -13,12 +13,13 @@ function changeName() {
 
     document.getElementById("random--name").textContent = coderName;
     swal.fire({
-        title: `${coderName}, es tu turno!`,
-        text: 'Tú puedes!!!',
+        title: `${coderName}, it's your turn!`,
+        text: 'You can do it!',
         width: 600,
         padding: '3em',
-        color: '#78C7E6',
+        color: '#003C8D',
         background: '#fff url(/images/trees.png)',
+        confirmButtonColor: '#FE9231',
         backdrop: `
             rgba(120, 199, 230, 0.4)
             url("../images/i-can-yo-puedo.gif")
