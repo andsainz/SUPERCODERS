@@ -3,7 +3,7 @@ const superCoders = [ "Cyntia", "Diego A", "Fernando", "Geovanny", "Gisela", "Ja
 function changeName() {
     if (superCoders.length <= 0) {
         alert("El último Coder ya ha sido seleccionado."); // Alerta cuando es el último coder
-        window.location.href = "coders-home.html"; // Volver a la pantalla de inicio
+        window.location.href = "index.html"; // Volver a la pantalla de inicio
         return;
     }
 
@@ -21,7 +21,7 @@ function changeName() {
         background: '#fff url(/images/trees.png)',
         backdrop: `
             rgba(120, 199, 230, 0.4)
-            url("images/i-can-yo-puedo.gif")
+            url("../images/i-can-yo-puedo.gif")
             top
             no-repeat
         `
@@ -42,7 +42,7 @@ function showNames(){
     list.innerHTML = "";
     for (let i = 0; i < superCoders.length; i++){
     let li = document.createElement("li");
-    li.innerHTML = `<span>${superCoders[i]}</span><img id="editName--btn" src="images/draw.png" onclick="editName(${i})"> <img id="deleteName--btn" src="images/close.png" onclick="removeName(${i})">`;
+    li.innerHTML = `<span>${superCoders[i]}</span><img id="editName--btn" src="../images/draw.png" onclick="editName(${i})"> <img id="deleteName--btn" src="../images/close.png" onclick="removeName(${i})">`;
     list.appendChild(li);
     }
 };
@@ -62,12 +62,7 @@ function removeName(index) {
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
         confirmButtonText: 'Yes, delete it!',
-        backdrop:`
-        rgba(0,0,123,0.4)
-        url("images/spiderman-deadpool.gif")
-        left-start
-        no-repeat
-    `
+
     }).then((result) => {
         if (result.isConfirmed) {
             superCoders.splice(index,1)
@@ -119,7 +114,7 @@ function alertMsj(){
         timer: 2000,
         backdrop: `
             rgba(120, 199, 230, 0.4)
-            url("images/spiderman-deadpool.gif")
+            url("../images/spiderman-deadpool.gif")
             left-start
             no-repeat
         `
