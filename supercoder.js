@@ -2,8 +2,8 @@ const superCoders = [ "Cyntia", "Diego A", "Fernando", "Geovanny", "Gisela", "Ja
 
 function changeName() {
     if (superCoders.length <= 0) {
-        alert("El último Coder ya ha sido seleccionado."); // Alerta cuando es el último coder
-        window.location.href = "index.html"; // Volver a la pantalla de inicio
+        alert("The last coder has been selected."); // Alerta cuando es el último coder
+        window.location.href = "../index.html"; // Volver a la pantalla de inicio
         return;
     }
 
@@ -113,11 +113,5 @@ function alertMsj(){
         title: 'Your work has been saved',
         showConfirmButton: false,
         timer: 2000,
-        backdrop: `
-            rgba(120, 199, 230, 0.4)
-            url("../images/spiderman-deadpool.gif")
-            left-start
-            no-repeat
-        `
     })
 }
