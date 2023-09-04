@@ -224,10 +224,8 @@
         display: flex;
         justify-content: end;
         margin-right: 10rem;
-        margin-top: 1.5rem;
         animation: slideInRight 1s 1 linear;
         z-index: 3;
-    
     }
     #hero-ready{
         position: absolute;

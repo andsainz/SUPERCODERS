@@ -12,7 +12,20 @@ function changeName() {
     superCoders.splice(index, 1); // No volverá a aparecer el coder seleccionado
 
     document.getElementById("random--name").textContent = coderName;
-    alert(`${coderName}, te tocó`); // Aviso del nombre del coder seleccionado
+    swal.fire({
+        title: `${coderName}, es tu turno!`,
+        text: 'Tú puedes!!!',
+        width: 600,
+        padding: '3em',
+        color: '#78C7E6',
+        background: '#fff url(/images/trees.png)',
+        backdrop: `
+            rgba(120, 199, 230, 0.4)
+            url("images/i-can-yo-puedo.gif")
+            top
+            no-repeat
+        `
+    }); // Aviso del nombre del coder seleccionado
 }
 
 //agregar nombres
@@ -41,10 +54,31 @@ function editName(index){
 }
 
 function removeName(index) {
-    if (confirm(`¿Quieres eliminar este ${superCoders[index]}?`)){
-        superCoders.splice(index,1)
-        showNames()
-    }
+    Swal.fire({
+        title: 'Are you sure?',
+        text: "You won't be able to revert this!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, delete it!',
+        backdrop:`
+        rgba(0,0,123,0.4)
+        url("images/spiderman-deadpool.gif")
+        left-start
+        no-repeat
+    `
+    }).then((result) => {
+        if (result.isConfirmed) {
+            superCoders.splice(index,1)
+            showNames()
+        Swal.fire({
+            title: 'Deleted!',
+            text: 'Your file has been deleted.',
+            icon: 'success',
+        })
+        }
+    })
 }
 
 function reset(){
@@ -76,4 +110,18 @@ let fadeInFirstHero = setInterval(() => {
     opacity += 0.01;
 }, 5);
 
-
+function alertMsj(){
+    Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'Your work has been saved',
+        showConfirmButton: false,
+        timer: 2000,
+        backdrop: `
+            rgba(120, 199, 230, 0.4)
+            url("images/spiderman-deadpool.gif")
+            left-start
+            no-repeat
+        `
+    })
+}
